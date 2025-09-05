@@ -10,6 +10,9 @@ public class FizzBuzz {
         if (isMultipleOf3 && !isMultipleOf5) {
             return FIZZ;
         }
+        if (!isMultipleOf3 && isMultipleOf5) {
+            return BUZZ;
+        }
         if (!isMultipleOf3 && !isMultipleOf5) {
             return String.valueOf(count);
         }
