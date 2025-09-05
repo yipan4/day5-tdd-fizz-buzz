@@ -10,15 +10,14 @@ public class FizzBuzz {
         if (isMultipleOf3 && isMultipleOf5) {
             return FIZZBUZZ;
         }
-        if (isMultipleOf3 && !isMultipleOf5) {
+        else if (isMultipleOf3) {
             return FIZZ;
         }
-        if (!isMultipleOf3 && isMultipleOf5) {
+        else if (isMultipleOf5) {
             return BUZZ;
         }
-        if (!isMultipleOf3 && !isMultipleOf5) {
+        else {
             return String.valueOf(count);
         }
-        return null;
     }
 }
