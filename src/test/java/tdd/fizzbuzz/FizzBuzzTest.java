@@ -27,4 +27,14 @@ public class FizzBuzzTest {
         // Expect
         assertEquals(FIZZ, result);
     }
+
+    @Test
+    public void should_return_buzz_when_count_given_is_multiple_of_5_only() {
+        // Given
+        int count = 5;
+        // When
+        String result = FizzBuzz.countFizzBuzz(count);
+        // Expect
+        assertEquals(BUZZ, result);
+    }
 }
